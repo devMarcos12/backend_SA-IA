@@ -5,8 +5,8 @@ import os
 
 router = APIRouter()
 
-MODEL_PATH = "../models/naive_bayes_model.pkl"
-VECTORIZER_PATH = "../models//tfidf_vectorizer.pkl"
+MODEL_PATH = "./models/naive_bayes_model.pkl"
+VECTORIZER_PATH = "./models//tfidf_vectorizer.pkl"
 
 if os.path.exists(MODEL_PATH) and os.path.exists(VECTORIZER_PATH):
     model = joblib.load(MODEL_PATH)

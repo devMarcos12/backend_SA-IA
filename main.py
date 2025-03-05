@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.routes import predict
+from routes import predict
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title="Sentiment Analysis API", description="API for predicting sentiment of movie reviews.", version="1.0")
